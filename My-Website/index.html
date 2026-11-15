@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>LUNAR FRONTIER: MISSION OUTPOST – NASA 3D Space Simulator</title>
+  <meta name="description"
+    content="Every Decision Counts. Every Resource Matters. Survival Is Your Mission. A browser-based 3D educational survival and resource-management game for ages 7-12 powered by NASA open science data." />
+  <meta name="theme-color" content="#05070f" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="./style.css">
+  <style>
+    body {
+      background-color: #05070f;
+      background-image: radial-gradient(circle at 50% 30%, rgba(11, 61, 145, 0.25) 0%, rgba(5, 7, 15, 0.95) 100%), url('./assets/background.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      font-family: 'Chakra Petch', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+    }
+
+    code,
+    pre,
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+
+      #printable-certificate,
+      #printable-certificate * {
+        visibility: visible;
+      }
+
+      #printable-certificate {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: 4px solid #f59e0b !important;
+        background-color: #0b132b !important;
+        color: #ffffff !important;
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="./script.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
